@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Codify collge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #474e5d;
+          color: white;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color:rgb(133, 122, 122);
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        body{
+             background-color:rgb(133, 122, 122);
+        }
+        
+        </style>
+  
+
+
+</head>
+<body data spy="scroll" data-target="#navbarResponsiv" style="background: none;">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">codify collge</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">check out<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="prodect.html">proudcut</a></li>
+                    <li><a href="post.html">post</a></li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- strat Home section -->
+<!-- strat imgage slider -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="  width:100%;
+    max-height: 441.688px !important;">
+      <div class="item active">
+        <img src="https://images.unsplash.com/photo-1573495613179-848ffd29f962?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk3fHxwbmclMjAlMjB3ZWIlMjBiYWNrZ3JvdW5nJTIwaW1hZ2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption text-center" style="position: sticky">
+            <h1>Wlcome to Codjfy collge</h1>
+            <h3>GET BETER LIFE WITH AS</h3>
+            <button type="button" class="btn btn-dark" style="background: #343a40;
+            border-color: #343a40;">GET STRATED</button>
+        </div>
+    </div>
+
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzU3fHxwbmclMjAlMjB3ZWIlMjBiYWNrZ3JvdW5nJTIwaW1hZ2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+  <div class="about-section">
+    <h1>About Us </h1>
+    <p>We are the Best place to study full stock in sewdan </p>
+    <p>we are the only place in the all the word you can study it by your langauge
+        we  have many teacher some expland to Fullstock by Arbic ,English ,Sewdish.and one off the best our teacher is
+     <a class="btn btn-primary btn-lg" href="post.html" role="button"> Read more</a>
+     
+</p>
+  </div>
+  
+  <h2 style="text-align:center">FULL STOCK (FRONTEND-BACKEND )IT</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGl0JTIwcGljfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Frontend</h2>
+          <p class="title">Fullstock</p>
+          <p>Some text that describes me</p>
+          
+           <button type="button" class="btn btn-dark" style="background: #343a40;
+          border-color: #343a40;"><a href="prodect.html" >Read more</a> </button>
+          
+          <p>15-20 weeks</p>
+          <p> price 25000 kr</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1482440308425-276ad0f28b19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAwfHxpdCUyMHBpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Backend</h2>
+          <p class="title">Backend</p>
+          <p>Some text that describes me.</p>
+          <p>10-15 weeks</p>
+          <p> price 25000 kr</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGl0JTIwcGljfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Full stock</h2>
+          <p class="title">Designer</p>
+          <p>Some text that describes me.</p>
+          <p>25-30 weeks </p>
+          <p> price 50000 kr</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer style="background-color: rgb(19, 15, 15);">
+    <h5 style="color: azure;"> contact as vi facebook:ihsan-913@hotmail.com</h5>
+    <h5 style="color: azure;"> contact as vi interjram:ihsan-913@hotmail.com</h5>
+    <h5 style="color: azure;"> contact as vi what up:ihsan-913@hotmail.com</h5>
+</footer>
+
+
+
+
+<!-- Script Soutse files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

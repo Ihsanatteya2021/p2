@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nuno- RESPONSIVE BOOTSRAP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        :before, :after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #474e5d;
+          color: white;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color:rgb(133, 122, 122);
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        body{
+             background-color:rgb(133, 122, 122);
+        }
+        
+        .home-inner img{
+   height: 200vh;
+   width: 220vh ;
+   
+}
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top:38%;
+    z-index:1;
+    color: white;
+    text-transform: uppercase;
+}
+.caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem.1rem.8rem;
+    padding-bottom: 1rem;
+}
+.caption h3{
+    font-style: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+}
+
+/* =====COURSE SECTION==== */
+
+.narrow{
+width: 75%;
+margin: 1.5rem auto;
+padding-top: 2rem;
+
+}
+.narrow h1{
+    font-size: 2.4rem;
+}
+.btn-secondary{
+    border-width: medium;
+    border-radius: 0;
+    padding: 6rem 1.2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    border-color: #1EBBA3;
+    background-color: #1EBBA3;
+    color:rgb(201, 187, 187);
+}
+.btn-secondary:hover,
+.btn-secondary:focus{
+    border-color: #189582;
+    background-color: #189582;
+    color: white;
+}
+/* =====Features srction===== */
+.jumbotron{
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+
+
+}
+h3.heading{
+    font-size:1.9rem;
+    font-weight:700 ;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+.heading-underline{
+    width: 3rem;
+    height: .2rem;
+    background-color: #1EBBA3;
+    margin: 0auto 2rem;
+
+}
+.feature svg.svg-inline--fa{
+    color: #1EBBA3;
+}
+.feature h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+}
+.feature p{
+    font-size: 1.1rem;
+}
+/* =====Resources Section====== */
+.fixed{
+    background-image: url('https://images.unsplash.com/photo-1573495804660-b6b271f4c3f1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBuZyUyMGltZ2VzJTIwaXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    z-index: -1;
+
+}
+.dark{
+    background-image: rgba(0,0,0,0,75);
+    color: beige;
+    padding: 7rem 2rem;
+}
+.fixed-background h3{
+    margin-bottom: 2rem;
+}
+.fixed-background p{
+    margin-top: 1.5rem;
+}
+/* ====Clients Sectio===== */
+.clients img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+blockquote .svg-inline--fa{
+    color:#1ebba3;
+    margin:1rem;
+
+
+}
+.clients-hr{
+    border-top: .05rem solid ;
+}
+.footer{
+    background-color: #404040;
+    color: beige;
+    padding: 2rem 0.2rem;
+    margin-top: 1rem;
+
+}
+footer img{
+    height: 3rem;
+    margin: 1.5rem 00;
+
+}
+.footer a{
+    color: white;
+
+}
+footer svg.svg-inline--fa{
+    font-size: 1.6rem;
+    margin: 1.2 .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover{
+    color: #1ebba3 !important;
+
+
+
+}
+hr.stocket {
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    margin-top: 3rem;
+
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  #box6{
+  background-color: rgb(75, 71, 71);
+  text-align: center;
+  color: #ddd;
+  
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+        </style>
+  
+
+
+</head>
+<body data spy="scroll" data-target="#navbarResponsiv" style="background: none;">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">codify collge</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">check out<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="prodect.html">proudcut</a></li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </div>
+  <div id="portfolio"></div>
+<div class="jumbotron container-fluid">
+<h3 class="heading">About AS</h3>
+<div class="heading-underline"></div>
+<div class="row no-padding">
+    <div class="col-sm-4">
+        <div class="portfolid">
+ 
+
+</div>
+</div>
+<section class="section section-light">
+  <h2 style="text-align: center;"> why we are the best </h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed iste odit molestias recusandae nihil eum quis deleniti maiores laudantium, laborum excepturi accusamus, nulla provident quos totam eos minima facilis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dolore, earum cum veniam asperiores repellat labore fugit, quasi nesciunt odio nihil deserunt iusto laborum incidunt atque, assumenda magnam voluptatibus quas!</p>
+
+</section>
+<div class="pimg2">
+  <div class="ptext">
+  <spen class="border">
+     our websit
+  </spen>
+  </div>
+  <section class="section section-dark">
+      <h2 style="text-align: center;" >why IT is best jobb every were</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed iste odit molestias recusandae nihil eum quis deleniti maiores laudantium, laborum excepturi accusamus, nulla provident quos totam eos minima facilis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe dolore, earum cum veniam asperiores repellat labore fugit, quasi nesciunt odio nihil deserunt iusto laborum incidunt atque, assumenda magnam voluptatibus quas!</p>
+
+  </div>
+  <div class="pimg3">
+      <div class="ptext">
+      <spen class="border">
+          Section three
+      </spen>
+      </div>
+
+<!-- End portfolio section -->
+
+<!--  strat team section --> 
+<div id="team"></div>
+
+<!-- End  team section -->
+
+<!--  strat contact section --> -->
+<div id="contact"></div>
+
+<!-- End  contact section -->
+
+<!-- End Course Section -->
+
+<div id="box3">
+  <div id="course" class="offset">
+   
+
+<!-- end Resourcse section-->
+<!-- strat Clients Section -->
+<div id="box5">
+<div id="clients" class="offset">
+<!-- strat jumbotron -->
+<div class="jumbotron">
+   <div class="col-12 text-center">
+       <h3 class="heading"> Clients</h3>
+       <div class="heading-underline"></div>
+   </div>
+   <div class="row">
+       <div class="col-md-6 clients">
+           <div class="row">
+               <div class="col-md-4">
+                   <img src="https://images.unsplash.com/photo-1594477176558-29efc2ad0fe4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzU3fHxwZXJzb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+               </div>
+               <div class="col-md-8">
+                   <blockquote>
+                       <i class="fas fa-qutote-left"></i>
+                           I see Godify collge support as more of a partner to my company then resource.I can pick up the phone and tolk to anyone at anytime 
+                           <hr class="client-hr">
+                           <cite>&#8212; Julia,small Business Owner</cite> 
+                   
+                   </blockquote>
+
+               </div>
+           </div>
+       </div>
+       <div class="col-md-6 clients">
+           <div class="row">
+               <div class="col-md-4">
+                   <img src="https://images.unsplash.com/photo-1587151996639-e6f4b65e10cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5NXx8cGVyc29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+               </div>
+               <div class="col-md-8">
+                   <blockquote>
+                       <i class="fas fa-qutote-left"></i>
+                           I see Godify collge support as more of a partner to my company then resource.I can pick up the phone and tolk to anyone at anytime 
+                           <hr class="client-hr">
+                           <cite>&#8212;Tomas ,Professional photographer</cite> 
+                   
+                   </blockquote>
+
+               </div>
+           </div>
+       </div>
+   </div>
+
+</div>
+<div class="col-12 narrow text-center">
+   <p class="lead">Want to learn more about  web developing full stock </p>
+   <a class="btn btn-secondary btn-md "href="https://codifycollege.se/" target="blank"> fullstock course</a>
+</div>
+</div>
+</div>
+
+<footer style="background-color: rgb(19, 15, 15);">
+    <h5 style="color: azure;"> contact as vi facebook:ihsan-913@hotmail.com</h5>
+    <h5 style="color: azure;"> contact as vi interjram:ihsan-913@hotmail.com</h5>
+    <h5 style="color: azure;"> contact as vi what up:ihsan-913@hotmail.com</h5>
+</footer>
+
+
+
+
+<!-- Script Soutse files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
